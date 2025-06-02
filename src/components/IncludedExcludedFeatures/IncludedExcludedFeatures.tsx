@@ -54,9 +54,9 @@ export default function IncludedExcludedFeatures() {
                 <span className="text-white font-bold text-sm">📋</span>
               </div>
             </div>
-            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">What's Included & What's not Included</h2>
+            <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">What&apos;s Included & What&apos;s not Included</h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              The LittleDino's mission is to provide affordable, high-quality early education and childcare services
+              The LittleDino&apos;s mission is to provide affordable, high-quality early education and childcare services
             </p>
           </div>
         </div>

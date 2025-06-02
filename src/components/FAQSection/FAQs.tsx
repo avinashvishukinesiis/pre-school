@@ -63,7 +63,7 @@ export default function FAQs() {
                   <Star className="w-12 h-12 text-yellow-400" fill="currentColor" />
                 </div>
                 <p className="text-gray-600 text-lg leading-relaxed">
-                  The LittleDino's mission is to provide affordable, high-quality early education and childcare services
+                  The LittleDino&apos;s mission is to provide affordable, high-quality early education and childcare services
                   for working families to ensure every child.
                 </p>
               </div>

@@ -3,7 +3,7 @@ import TopBanner from './TopBanner'
 
 const Header = () => {
 
-	const bgColor = "bg-[#00A8B3]"
+	// const bgColor = "bg-[#00A8B3]"
 
 	return (
 		<div>

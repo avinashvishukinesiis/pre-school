@@ -47,7 +47,7 @@ export default function InstagramGallery() {
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800">Follow Instagram</h2>
           </div>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-            The LittleDino's mission is to provide affordable, high-quality early education and childcare services for
+            The LittleDino&apos;s mission is to provide affordable, high-quality early education and childcare services for
             working families to ensure every child.
           </p>
         </div>

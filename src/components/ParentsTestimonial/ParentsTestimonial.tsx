@@ -60,7 +60,7 @@ export default function ParentsTestimonial() {
 							</div>
 						</div>
 						<p className="text-gray-600 text-lg max-w-3xl mx-auto">
-							The LittleDino's mission is to provide affordable, high-quality early education and childcare services for
+							The LittleDino&apos;s mission is to provide affordable, high-quality early education and childcare services for
 							working families to ensure every child.
 						</p>
 					</div>

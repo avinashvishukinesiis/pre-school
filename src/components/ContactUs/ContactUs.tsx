@@ -2,7 +2,7 @@
 
 import type React from "react"
 import { useState } from "react"
-import { Star } from "lucide-react"
+// import { Star } from "lucide-react"
 
 export default function ContactUs() {
   const [formData, setFormData] = useState({

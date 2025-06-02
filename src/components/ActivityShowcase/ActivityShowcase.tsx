@@ -103,7 +103,7 @@ const ActivityShowcase = () => {
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">12 different activity zones</h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            The LittleDino's mission is to provide affordable, high-quality early education and childcare services
+            The LittleDino&apos;s mission is to provide affordable, high-quality early education and childcare services
           </p>
         </div>
 
