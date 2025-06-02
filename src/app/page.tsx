@@ -9,7 +9,7 @@ import IncludedExcludedFeatures from "@/components/IncludedExcludedFeatures/Incl
 import InstagramGallery from "@/components/InstagramGallery/InstagramGallery";
 import Layout from "@/components/Layout/Layout";
 import ParentsTestimonial from "@/components/ParentsTestimonial/ParentsTestimonial";
-import Section2 from "@/components/section2/Section2";
+import Section2 from "@/components/Section2/Section2";
 import Section3 from "@/components/Section3/Section3";
 
 
