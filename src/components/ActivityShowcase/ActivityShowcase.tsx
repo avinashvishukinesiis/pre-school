@@ -92,8 +92,14 @@ const ActivityShowcase = () => {
   }
 
   return (
-    <section className="py-16 bg-gray-50">
-      <div className="container mx-auto px-4">
+    <section className="py-16 bg-[#F7F7F7] relative">
+
+      {/* top wave container */}
+      <div className="absolute top-0 translate-y-[-95%]">
+        <img src="/activities/topwave.svg" alt="topwave" />
+      </div>
+
+      <div className="container mx-auto px-4 bg-[#F7F7F7]">
         {/* Header */}
         <div className="text-center mb-12">
           <div className="flex justify-center items-center mb-4">
@@ -174,6 +180,12 @@ const ActivityShowcase = () => {
           ))}
         </div>
       </div>
+
+      {/* bottom wave container */}
+      <div className="absolute bottom-0 translate-y-[100%]">        
+        <img src="/activities/bottomwave.svg" alt="bottomwave" />
+      </div>
+
     </section>
   )
 }

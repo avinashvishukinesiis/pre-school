@@ -1,24 +1,25 @@
 import { FileText, Lightbulb, Award, ThumbsUp, X } from "lucide-react"
+import { ImCross } from "react-icons/im";
 
 export default function IncludedExcludedFeatures() {
   const includedItems = [
     {
-      icon: <FileText className="w-8 h-8 text-blue-600" />,
+      icon: "/includeExcludeFeature/report.jpg",
       title: "All Inclusive Report",
       description: "The amazing way to olor sit amet, consectetur",
     },
     {
-      icon: <Lightbulb className="w-8 h-8 text-yellow-500" />,
+      icon: "/includeExcludeFeature/bulb.jpg",
       title: "What makes your child unique",
       description: "The amazing way to olor sit amet, consectetur",
     },
     {
-      icon: <Award className="w-8 h-8 text-green-600" />,
+      icon: "/includeExcludeFeature/medal.jpg",
       title: "Your child's inherent talents",
       description: "The amazing way to olor sit amet, consectetur",
     },
     {
-      icon: <ThumbsUp className="w-8 h-8 text-purple-600" />,
+      icon: "/includeExcludeFeature/thumbsup.jpg",
       title: "Positive Parenting",
       description: "The amazing way to olor sit amet, consectetur",
     },
@@ -44,10 +45,11 @@ export default function IncludedExcludedFeatures() {
   ]
 
   return (
-    <section className="py-16 bg-gray-50">
+    <section className="py-16 bg-gray-50 relative">
+
       <div className="container mx-auto px-4">
         {/* Header Section */}
-        <div className="border-2 border-dashed border-blue-300 rounded-lg p-8 mb-12">
+        <div className=" rounded-lg p-8 mb-12">
           <div className="text-center">
             <div className="flex justify-center items-center mb-4">
               <div className="w-8 h-8 bg-yellow-400 rounded mr-4 flex items-center justify-center">
@@ -62,13 +64,13 @@ export default function IncludedExcludedFeatures() {
         </div>
 
         {/* Comparison Grid */}
-        <div className="border-2 border-dashed border-blue-300 rounded-lg p-8">
+        <div className=" rounded-lg p-8">
           <div className="grid md:grid-cols-2 gap-8">
             {/* What's Included Column */}
             <div className="space-y-6">
               {includedItems.map((item, index) => (
                 <div key={index} className="flex items-start space-x-4 p-4 bg-white rounded-lg shadow-sm">
-                  <div className="flex-shrink-0">{item.icon}</div>
+                  <div className="flex-shrink-0"> <img src={item.icon} alt={item.icon} /> </div>
                   <div className="flex-1">
                     <h3 className="text-lg font-semibold text-gray-800 mb-2">{item.title}</h3>
                     <p className="text-gray-600 text-sm">{item.description}</p>
@@ -80,9 +82,9 @@ export default function IncludedExcludedFeatures() {
             {/* What's Not Included Column */}
             <div className="space-y-6">
               {notIncludedItems.map((item, index) => (
-                <div key={index} className="flex items-start space-x-4 p-4 bg-gray-100 rounded-lg">
-                  <div className="flex-shrink-0">
-                    <X className="w-8 h-8 text-gray-500" />
+                <div key={index} className="flex justify-center items-center space-x-4 p-4 bg-gray-100 rounded-lg ">
+                  <div className="flex-shrink-0 h-[100%] flex justify-center items-center">
+                    <ImCross size={"22px"} className="text-gray-500" />
                   </div>
                   <div className="flex-1">
                     <h3 className="text-lg font-semibold text-gray-700 mb-2">{item.title}</h3>

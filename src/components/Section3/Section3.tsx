@@ -50,12 +50,16 @@ export default function Section3() {
         </svg>
       </div> */}
 
+      {/* first top wave image container */}
       <div>
-      {/* <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill=" #8E449A" fill-opacity="1" d="M0,160L60,170.7C120,181,240,203,360,229.3C480,256,600,288,720,282.7C840,277,960,235,1080,218.7C1200,203,1320,213,1380,218.7L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path></svg> */}
-      <img src="./wave.svg" alt="" />
+        <img src="./wave.svg" alt="" />
       </div>
 
-      <div className="bg-[#8E449A] pt-16 pb-32 relative z-[10]">
+      {/* background color */}
+      <div className="absolute bg-[#8E449A] top-[100px] w-full h-[450px] z-[100]">
+      </div>
+
+      <div className="pt-16 pb-32 relative z-[110]">
         {/* Decorative elements */}
         {/* <div className="absolute right-1/4 top-40 opacity-20">
           <Hexagon className="w-12 h-12 text-white" />

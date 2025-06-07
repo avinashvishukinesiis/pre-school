@@ -49,7 +49,7 @@ export default function ContactUs() {
         <div className="container mx-auto px-2 relative z-10">
           <div className="grid lg:grid-cols-2 gap-10 items-center">
             {/* Left side - Child with megaphone image */}
-            <div className="flex justify-center lg:justify-end">
+            <div className="flex justify-center lg:justify-end relative">
               <div className="relative">
                 <img
                   src="/contactUs/leftimage.jpg"
@@ -57,6 +57,12 @@ export default function ContactUs() {
                   className="w-full max-w-md"
                 />
               </div>
+
+              {/* star image's container */}
+              <div className="absolute right-0 top-[20%] right-[-30px]">
+                <img src="/start.jpg" alt="startImage" />
+              </div>
+
             </div>
 
             {/* Right side - Form */}

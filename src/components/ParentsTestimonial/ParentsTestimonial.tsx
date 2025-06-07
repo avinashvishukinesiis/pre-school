@@ -55,9 +55,12 @@ export default function ParentsTestimonial() {
 						<div className="flex justify-center items-center mb-4 relative">
 							<Star className="w-10 h-10 text-pink-400 mr-4" fill="currentColor" />
 							<h2 className="text-4xl md:text-5xl font-bold text-gray-800">What Parents Say</h2>
-							<div className="absolute right-0 top-0">
-								<Smile className="w-8 h-8 text-pink-300" />
+
+							{/* support image's container */}
+							<div className="absolute right-0 bottom-0 translate-y-[100%]">
+								<img src="/parentsTestimonial/supportImage.jpg" alt="supportImage" />
 							</div>
+
 						</div>
 						<p className="text-gray-600 text-lg max-w-3xl mx-auto">
 							The LittleDino&apos;s mission is to provide affordable, high-quality early education and childcare services for
@@ -114,6 +117,11 @@ export default function ParentsTestimonial() {
 					<img src="/parentsTestimonial/bottomwave.svg" alt="bottomwave" />
 				</div>
 
+			</div>
+
+			{/* bottom wave container */}
+			<div className="absolute bottom-0 z-[1000]">
+				<img src="/parentsTestimonial/bottomwave.svg" alt="bottomwave" />
 			</div>
 
 

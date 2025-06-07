@@ -74,8 +74,8 @@ export default function FAQs() {
                   <div
                     key={index}
                     className={`rounded-2xl transition-all duration-300 ${openIndex === index
-                        ? "bg-gradient-to-r from-yellow-300 to-orange-300 shadow-lg"
-                        : "bg-white shadow-md hover:shadow-lg"
+                      ? "bg-gradient-to-r from-yellow-300 to-orange-300 shadow-lg"
+                      : "bg-white shadow-md hover:shadow-lg"
                       }`}
                   >
                     <button
@@ -87,7 +87,7 @@ export default function FAQs() {
                       >
                         {faq.question}
                       </span>
-                      <div className={`flex-shrink-0 ml-4 ${openIndex === index ? "text-gray-900" : "text-gray-600"}`}>
+                      <div className={`flex-shrink-0 ml-4 cursor-pointer ${openIndex === index ? "text-gray-900" : "text-gray-600"}`}>
                         {openIndex === index ? (
                           <Plus className="w-6 h-6 transform rotate-45 transition-transform duration-300" />
                         ) : (
@@ -96,15 +96,29 @@ export default function FAQs() {
                       </div>
                     </button>
 
-                    {openIndex === index && (
-                      <div className="px-6 pb-6">
+                    {/* this is the old method , here transition is not working */}
+                    {/* {openIndex === index && (
+                      <div className="px-6 pb-6 transition-all duration-500">
                         <div className="pt-2 border-t border-gray-200 border-opacity-30">
                           <p className="text-gray-800 leading-relaxed">{faq.answer}</p>
                         </div>
                       </div>
-                    )}
+                    )} */}
+
+                    {/* this is the new method in here transition should work */}
+                    <div
+                      className={`px-6 pb-6 overflow-hidden transition-all duration-500 ${openIndex === index ? 'max-h-40 opacity-100' : 'max-h-0 opacity-0'
+                        }`}
+                    >
+                      <div className="pt-2 border-t border-gray-200 border-opacity-30">
+                        <p className="text-gray-800 leading-relaxed">{faq.answer}</p>
+                      </div>
+                    </div>
+
+
                   </div>
                 ))}
+
               </div>
             </div>
 
@@ -127,7 +141,7 @@ export default function FAQs() {
           </div>
         </div>
       </div>
-      
+
     </section>
   )
 }
