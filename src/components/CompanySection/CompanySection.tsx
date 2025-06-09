@@ -36,7 +36,7 @@ const CompanySection = () => {
 					<img src="/companySectionImages/wave2.jpg" alt="wave2" className='w-auto h-[50px]' />
 				</div>
 
-				<div className='container w-[75%] flex justify-around items-center gap-[10px]' >
+				<div className='container w-[90%] flex justify-around items-center gap-[10px]' >
 
 					{companyImages.map((img, ind) => {
 						return <div key={ind} className='flex-1 flex justify-center items-center'>

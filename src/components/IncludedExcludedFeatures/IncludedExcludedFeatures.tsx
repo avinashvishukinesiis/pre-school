@@ -1,53 +1,58 @@
-import { FileText, Lightbulb, Award, ThumbsUp, X } from "lucide-react"
 import { ImCross } from "react-icons/im";
 
 export default function IncludedExcludedFeatures() {
   const includedItems = [
-    {
-      icon: "/includeExcludeFeature/report.jpg",
-      title: "All Inclusive Report",
-      description: "The amazing way to olor sit amet, consectetur",
-    },
-    {
-      icon: "/includeExcludeFeature/bulb.jpg",
-      title: "What makes your child unique",
-      description: "The amazing way to olor sit amet, consectetur",
-    },
-    {
-      icon: "/includeExcludeFeature/medal.jpg",
-      title: "Your child's inherent talents",
-      description: "The amazing way to olor sit amet, consectetur",
-    },
-    {
-      icon: "/includeExcludeFeature/thumbsup.jpg",
-      title: "Positive Parenting",
-      description: "The amazing way to olor sit amet, consectetur",
-    },
-  ]
+  {
+    icon: "/includeExcludeFeature/report.jpg",
+    title: "All-Inclusive Child Progress Report",
+    description:
+      "Get detailed insights into your child's developmental milestones, learning styles, and social-emotional growth.",
+  },
+  {
+    icon: "/includeExcludeFeature/bulb.jpg",
+    title: "What Makes Your Child Unique",
+    description:
+      "Understand your child's personality, strengths, and preferences through compassionate observation and engagement.",
+  },
+  {
+    icon: "/includeExcludeFeature/medal.jpg",
+    title: "Recognizing Inherent Talents",
+    description:
+      "We celebrate your child’s natural talents—whether creative, logical, social, or physical—to help them shine confidently.",
+  },
+  {
+    icon: "/includeExcludeFeature/thumbsup.jpg",
+    title: "Positive Parenting Guidance",
+    description:
+      "Practical, uplifting advice to support your parenting journey with love, patience, and mindful communication.",
+  },
+]
+
 
   const notIncludedItems = [
-    {
-      title: "Personal consultation is not included",
-      description: "The amazing way to olor sit amet, consectetur",
-    },
-    {
-      title: "Future forecasts are not included",
-      description: "The amazing way to olor sit amet, consectetur",
-    },
-    {
-      title: "We won't negatively label your child",
-      description: "The amazing way to olor sit amet, consectetur",
-    },
-    {
-      title: "No dosha, dasha analysis",
-      description: "The amazing way to olor sit amet, consectetur",
-    },
-  ]
+  {
+    title: "No Personal Consultation Included",
+    description: "Our service is observational and curriculum-based without one-on-one therapist consultation.",
+  },
+  {
+    title: "No Future Predictions or Forecasts",
+    description: "We focus on nurturing potential, not predicting future career paths or destinies.",
+  },
+  {
+    title: "No Negative Labelling of Any Child",
+    description: "Every child is unique—we do not use terms that limit or define children negatively.",
+  },
+  {
+    title: "No Dosha, Dasha or Astrological Analysis",
+    description: "We believe in child development through education, love, and discovery—not astrology.",
+  },
+]
+
 
   return (
-    <section className="py-16 bg-gray-50 relative">
+    <section className="py-16 bg-gray-50 relative flex items-center justify-center">
 
-      <div className="container mx-auto px-4">
+      <div className="container mx-auto px-4 md:w-[90%]">
         {/* Header Section */}
         <div className=" rounded-lg p-8 mb-12">
           <div className="text-center">
@@ -58,7 +63,7 @@ export default function IncludedExcludedFeatures() {
             </div>
             <h2 className="text-3xl md:text-4xl font-bold text-gray-800 mb-4">What&apos;s Included & What&apos;s not Included</h2>
             <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-              The LittleDino&apos;s mission is to provide affordable, high-quality early education and childcare services
+              Cuddle&apos;s mission is to provide affordable, high-quality early education and childcare services
             </p>
           </div>
         </div>

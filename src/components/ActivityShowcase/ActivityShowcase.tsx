@@ -7,42 +7,68 @@ const ActivityShowcase = () => {
   const [isTransitioning, setIsTransitioning] = useState(true)
 
   const activities = [
-    {
-      title: "First Activity",
-      des: "lorem ispum test yupo testg rtewr yutees",
-      src: "/activities/activity1.jpg",
-    },
-    {
-      title: "Second Activity",
-      des: "lorem ispum test yupo testg rtewr yutees",
-      src: "/activities/activity2.jpg",
-    },
-    {
-      title: "Third Activity",
-      des: "lorem ispum test yupo testg rtewr yutees",
-      src: "/activities/activity1.jpg",
-    },
-    {
-      title: "Fourth Activity",
-      des: "lorem ispum test yupo testg rtewr yutees",
-      src: "/activities/activity3.jpg",
-    },
-    {
-      title: "Fifth Activity",
-      des: "lorem ispum test yupo testg rtewr yutees",
-      src: "/activities/activity4.jpg",
-    },
-    {
-      title: "Sixth Activity",
-      des: "lorem ispum test yupo testg rtewr yutees",
-      src: "/activities/activity1.jpg",
-    },
-    {
-      title: "Seventh Activity",
-      des: "lorem ispum test yupo testg rtewr yutees",
-      src: "/activities/activity2.jpg",
-    },
-  ]
+  {
+    title: "Makerspace",
+    des: "Where tiny hands build big ideas through creativity and innovation.",
+    src: "/photo/1.jpg",
+  },
+  {
+    title: "Art Studio",
+    des: "A colorful world where imagination comes to life with every brushstroke.",
+    src: "/photo/7.jpg",
+  },
+  {
+    title: "Outdoor Play Space",
+    des: "Adventure awaits with climbing, running, and nature exploration.",
+    src: "/photo/18.jpg",
+  },
+  {
+    title: "Homerooms",
+    des: "A cozy, nurturing space where learning feels like a second home.",
+    src: "/photo/27.jpg",
+  },
+  {
+    title: "Movement Studio",
+    des: "Stretch, dance, and grow—where little bodies stay active and joyful.",
+    src: "/photo/22.jpg",
+  },
+  {
+    title: "Library & Reading Books",
+    des: "Storytime magic that sparks curiosity and a love for books.",
+    src: "/photo/14.jpg",
+  },
+  {
+    title: "Construction Area",
+    des: "Future architects at work, stacking, designing, and problem-solving.",
+    src: "/photo/34.jpg",
+  },
+  {
+    title: "Changing Room",
+    des: "A tidy, organized space for quick transitions and independence.",
+    src: "/photo/2.jpg",
+  },
+  {
+    title: "Dining Area",
+    des: "Fueling young minds with healthy meals and happy conversations.",
+    src: "/photo/11.jpg",
+  },
+  {
+    title: "Montessori Zone",
+    des: "Hands-on learning that fosters confidence and self-discovery.",
+    src: "/photo/42.jpg",
+  },
+  {
+    title: "Nap Room",
+    des: "A peaceful retreat for sweet dreams and recharging little energies.",
+    src: "/photo/27.jpg",
+  },
+  {
+    title: "Music Room",
+    des: "Where giggles, rhythm, and melodies create the soundtrack of childhood.",
+    src: "/photo/32.jpg",
+  },
+]
+
 
   // Create infinite loop by duplicating activities
   const extendedActivities = [
@@ -92,7 +118,9 @@ const ActivityShowcase = () => {
   }
 
   return (
-    <section className="py-16 bg-[#F7F7F7] relative">
+    <section className="py-16 bg-[#F7F7F7] relative flex items-center justify-center">
+
+    <div className="md:w-[90%]">
 
       {/* top wave container */}
       <div className="absolute top-0 translate-y-[-95%]">
@@ -109,7 +137,7 @@ const ActivityShowcase = () => {
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-gray-800 mb-6">12 different activity zones</h2>
           <p className="text-gray-600 text-lg max-w-2xl mx-auto">
-            The LittleDino&apos;s mission is to provide affordable, high-quality early education and childcare services
+            Cuddle&apos;s mission is to provide affordable, high-quality early education and childcare services
           </p>
         </div>
 
@@ -185,6 +213,7 @@ const ActivityShowcase = () => {
       <div className="absolute bottom-0 translate-y-[100%]">        
         <img src="/activities/bottomwave.svg" alt="bottomwave" />
       </div>
+    </div>
 
     </section>
   )

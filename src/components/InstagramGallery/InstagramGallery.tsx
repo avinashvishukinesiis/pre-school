@@ -4,27 +4,27 @@ import Link from "next/link"
 export default function InstagramGallery() {
   const instagramPosts = [
     {
-      image: "/instagramGallery/instaGallery1.jpg",
+      image: "/photo/11.jpg",
       alt: "Child in red shirt playing",
       link: "https://instagram.com/p/example1",
     },
     {
-      image: "/instagramGallery/instaGallery2.jpg",
+      image: "/photo/18.jpg",
       alt: "Child with curly hair in orange jacket",
       link: "https://instagram.com/p/example2",
     },
     {
-      image: "/instagramGallery/instaGallery3.jpg",
+      image: "/photo/20.jpg",
       alt: "Two children sitting on yellow couch",
       link: "https://instagram.com/p/example3",
     },
     {
-      image: "/instagramGallery/instaGallery4.jpg",
+      image: "/photo/24.jpg",
       alt: "Adults and children doing crafts",
       link: "https://instagram.com/p/example4",
     },
     {
-      image: "/instagramGallery/instaGallery5.jpg",
+      image: "/photo/25.jpg",
       alt: "Child playing with colorful blocks",
       link: "https://instagram.com/p/example5",
     },
@@ -47,7 +47,7 @@ export default function InstagramGallery() {
             <h2 className="text-4xl md:text-5xl font-bold text-gray-800">Follow Instagram</h2>
           </div>
           <p className="text-gray-600 text-lg max-w-3xl mx-auto">
-            The LittleDino&apos;s mission is to provide affordable, high-quality early education and childcare services for
+            Cuddle&apos;s mission is to provide affordable, high-quality early education and childcare services for
             working families to ensure every child.
           </p>
         </div>
@@ -74,7 +74,7 @@ export default function InstagramGallery() {
         {/* Instagram Button */}
         <div className="text-center mt-10">
           <Link
-            href="https://instagram.com/littledino"
+            href="https://instagram.com/cuddle"
             className="inline-flex items-center px-6 py-3 bg-yellow-400 text-gray-800 rounded-full font-medium hover:bg-yellow-500 transition-colors duration-300"
             target="_blank"
             rel="noopener noreferrer"
